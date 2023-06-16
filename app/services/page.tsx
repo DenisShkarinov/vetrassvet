@@ -1,4 +1,4 @@
-import Layout from "@/app/components/Layout/Layout";
+import Layout from "@/components/Layout/Layout";
 export default function Page () {
     return (
         <Layout>
