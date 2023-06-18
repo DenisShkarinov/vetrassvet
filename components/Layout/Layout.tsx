@@ -1,6 +1,8 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-export default function Layout ({ children }) {
+import {Props} from "@/utils/utils";
+
+export default function Layout ({ children }: Props) {
     return (
         <>
             <Header></Header>
