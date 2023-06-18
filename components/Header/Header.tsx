@@ -1,23 +1,27 @@
-import Link from "next/link";
-import Image from "next/image";
+
 import Navigation from "@/components/Header/Navigation";
+import './header.scss'
+import Logo from "@/components/Logo";
+import Phones from "@/components/phones";
 export default function Header () {
     return (
         <header>
             <div className="main-header">
                 <div className="contact-to-clinic">
-
+                    <div className="location">
+                        <p>г. Жуковский</p>
+                        <p>ул. Гудкова, 17А</p>
+                    </div>
                 </div>
-                <div className="logo">
-                    <Link href='/'>
-                        <Image src='/vetrassvet.png'
-                               alt='Vetrassvet'
-                               width={250}
-                               height={80}></Image>
-                    </Link>
+                <Logo></Logo>
+                <div className="contact">
+                    <div className="phones">
+                        <Phones phoneNumber="+7 (991) 300-50-17"></Phones>
+                        <Phones phoneNumber="+7 (495) 198-02-32"></Phones>
+                    </div>
+
+                    <button>Записаться на приём</button>
                 </div>
-
-
             </div>
             <Navigation></Navigation>
         </header>

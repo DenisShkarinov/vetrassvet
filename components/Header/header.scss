@@ -1,0 +1,23 @@
+header {
+  padding: 1em ;
+  .main-header {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  nav {
+    padding-top: 1.5em;
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        padding-right: 1.5em;
+
+        &:last-child {
+          padding-right: 0;
+      }
+      }
+    }
+  }
+}
