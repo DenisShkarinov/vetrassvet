@@ -9,7 +9,6 @@ export default function Navigation ()  {
                 <li><Link href="/specialists">специалисты</Link></li>
                 <li><Link href="/reviews">Отзывы</Link></li>
                 <li><Link href="/articles">Статьи</Link></li>
-                <li><Link href="/contacts">Контакты</Link></li>
             </ul>
         </nav>
     )

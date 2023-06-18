@@ -1,8 +1,12 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import './globals.scss'
+import { Roboto } from 'next/font/google'
 import {Metadata} from "next";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Roboto({
+  weight: "400",
+  subsets: ['cyrillic'],
+  display: "swap"
+})
 
 export const metadata: Metadata = {
   title: 'Vetrassvet',

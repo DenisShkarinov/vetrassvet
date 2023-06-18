@@ -20,7 +20,7 @@ export default function Header () {
                         <Phones phoneNumber="+7 (495) 198-02-32"></Phones>
                     </div>
 
-                    <button>Записаться на приём</button>
+                    <button className=''>Записаться на приём</button>
                 </div>
             </div>
             <Navigation></Navigation>

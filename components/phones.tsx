@@ -3,7 +3,7 @@ interface Phones {
 }
 export default function Phones (props: Phones) {
     return (
-        <div className="phones">
+        <div className="phones-link">
             <a href={"tel:" + props.phoneNumber}>{ props.phoneNumber }</a>
         </div>
     )
