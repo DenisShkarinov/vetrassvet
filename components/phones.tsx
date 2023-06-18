@@ -1,6 +1,4 @@
-interface Phones {
-    phoneNumber?: string
-}
+import {Phones} from "@/utils/utils";
 export default function Phones (props: Phones) {
     return (
         <div className="phones-link">

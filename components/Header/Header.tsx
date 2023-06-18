@@ -3,6 +3,7 @@ import Navigation from "@/components/Header/Navigation";
 import './header.scss'
 import Logo from "@/components/Logo";
 import Phones from "@/components/phones";
+import MakeAnAppointment from "@/components/popup";
 export default function Header () {
     return (
         <header>
@@ -23,7 +24,9 @@ export default function Header () {
                     <button className=''>Записаться на приём</button>
                 </div>
             </div>
+
             <Navigation></Navigation>
+            <MakeAnAppointment></MakeAnAppointment>
         </header>
     )
 }
