@@ -8,9 +8,22 @@
   bottom: 0;
   margin: auto;
 
-  max-width: 500px;
+  max-width: 400px;
   height: 50vh;
   z-index: 1000;
-  background-color: $darkGray;
+  background-color: $silver;
   overflow: auto;
+  border-radius: 5px;
+  padding: .5em .7em;
+  box-shadow: 0 0 2px 3px $black;
+  
+  .form-title {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
 }

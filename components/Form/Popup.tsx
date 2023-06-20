@@ -1,6 +1,14 @@
+'use client'
+
 import '../form.scss'
 import Select from "@/components/Form/Select";
+import {FormEvent} from "react";
+
 export default function MakeAnAppointment () {
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault()
+        console.log(e.target)
+    }
     return (
         <div className='appointment-form'>
             <div className="form-title">
@@ -29,7 +37,7 @@ export default function MakeAnAppointment () {
                     <label htmlFor="textarea">Опишите проблему:</label>
                     <textarea name="textarea" id="textarea" cols={30} rows={10} required={true}></textarea>
                 </div>
-                <button type="submit">OK</button>
+                <button onSubmit={(e:FormEvent) => handleSubmit (e) } type="submit">OK</button>
             </form>
         </div>
     )

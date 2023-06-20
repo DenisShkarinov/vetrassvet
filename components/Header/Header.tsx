@@ -1,10 +1,11 @@
-
+'use client'
 import Navigation from "@/components/Header/Navigation";
 import './header.scss'
 import Logo from "@/components/Logo";
 import Phones from "@/components/phones";
 import MakeAnAppointment from "@/components/Form/Popup";
 export default function Header () {
+
     return (
         <header>
             <div className="main-header">
