@@ -1,4 +1,5 @@
-import './form.scss'
+import '../form.scss'
+import Select from "@/components/Form/Select";
 export default function MakeAnAppointment () {
     return (
         <div className='appointment-form'>
@@ -15,32 +16,18 @@ export default function MakeAnAppointment () {
                 </div>
                 <div className="inputfield">
                     <label htmlFor="animal">Вид животного</label>
-                    <select name="animal" id="animal" required={true}>
-                        <option value="dog">Собака</option>
-                        <option value="cat">Кошка</option>
-                        <option value="bird">Птица</option>
-                        <option value="other">Другое</option>
-                    </select>
+                    <Select name="animal" />
                 </div>
                 <div className="inputfield">
                     <input type="text" placeholder="Кличка" required={true}/>
                 </div>
                 <div className="inputfield">
                     <label htmlFor="specialist"></label>
-                    <select name="specialist" id="specialist" required={true}>
-                        <option value="terapevt">Терапевт</option>
-                        <option value="hirurg">Хирург</option>
-                        <option value="cardio">Кардиолог</option>
-                        <option value="derma">Дерматолог</option>
-                        <option value="neuro">Невролог</option>
-                        <option value="stoma">Стоматолог</option>
-                        <option value="endo">Эндокринолог</option>
-                        <option value="onko">Онколог</option>
-                    </select>
+                    <Select name='doctor'></Select>
                 </div>
                 <div className="inputfield">
                     <label htmlFor="textarea">Опишите проблему:</label>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10" required={true}></textarea>
+                    <textarea name="textarea" id="textarea" cols={30} rows={10} required={true}></textarea>
                 </div>
                 <button type="submit">OK</button>
             </form>
