@@ -4,6 +4,10 @@ import './header.scss'
 import Logo from "@/components/Logo";
 import Phones from "@/components/phones";
 import MakeAnAppointment from "@/components/Form/Popup";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebook, faVk, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
+
 export default function Header () {
 
     return (
@@ -13,6 +17,11 @@ export default function Header () {
                     <div className="location">
                         <p>г. Жуковский</p>
                         <p>ул. Гудкова, 17А</p>
+                    </div>
+                    <div className="social-links">
+                        <Link href="https://www.facebook.com/vet.rass.vet/"><FontAwesomeIcon icon={faFacebook}/></Link>
+                        <Link href="https://vk.com/vet_rass_vet"><FontAwesomeIcon icon={faVk}></FontAwesomeIcon></Link>
+                        <Link href="https://www.instagram.com/vet.rass.vet/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></Link>
                     </div>
                 </div>
                 <Logo></Logo>

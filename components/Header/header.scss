@@ -1,4 +1,5 @@
 @import "@/app/variables.module";
+
 header {
   padding: 1em ;
   .main-header {
@@ -9,6 +10,7 @@ header {
     .contact-to-clinic {
       .location {
         p {
+          font-size: 14px;
           text-align: center;
         }
       }
@@ -86,4 +88,8 @@ header {
       }
     }
   }
+}
+
+@media only screen and (max-width: 900px)  {
+  
 }
